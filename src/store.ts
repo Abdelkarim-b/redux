@@ -10,7 +10,7 @@ const userSlice = createSlice({
       state.value = action.payload
     },
     logout: (state) => {
-       state = initialState
+       state.value = initialState.value
     }
    }
 });

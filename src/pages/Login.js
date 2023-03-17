@@ -10,15 +10,12 @@ export const Login = () =>{
     return(
         <div>
            <h1>{username}</h1>
-           <input 
-             onChange={(e)=> setNewUserName(e.target.value)}
-           />
-           <button 
-           onClick={
-            ()=>dispatch(login({username: newUserName}))
-            }>
-           submit login</button>
-           <button>logout</button>
+           <input onChange={(e)=> setNewUserName(e.target.value)} />
+           <button onClick={
+                            ()=>dispatch(login({username: newUserName}))}
+            > submit login
+            </button>
+           <button onClick={()=>dispatch(logout())}>logout</button>
         </div>
     )
 }
