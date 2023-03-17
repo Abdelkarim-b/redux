@@ -15,7 +15,7 @@ export const Login = () =>{
                             ()=>dispatch(login({username: newUserName}))}
             > submit login
             </button>
-           <button onClick={()=>dispatch(logout())}>logout</button>
+           <button onClick={()=>dispatch(logout( ))}>logout</button>
         </div>
     )
 }
